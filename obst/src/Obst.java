@@ -29,4 +29,15 @@ public class Obst {
         this.reif = reif;
     }
 
+    @Override
+    public String toString() {
+
+        String text = "\n\t Name  = " + name;
+        text += "\n\tFarbe  =  "  + farbe;
+        text += "\n\tGewicht =  "  + gewicht;
+        text += "\n\treif  =   "  + reif;
+
+        return text;
+    }
+
 }

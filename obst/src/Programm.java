@@ -9,13 +9,13 @@ public class Programm {
         System.out.println(apfel.getFarbe());
         System.out.println(apfel.getGewicht());
 
-        Obst apfel2 = new Obst("Banane");
+        Obst banane = new Obst("Banane");
         //apfel2.name = "Apfel";
-        apfel2.setFarbe("rot");
-        apfel2.setGewicht(150);
+        banane.setFarbe("rot");
+        banane.setGewicht(150);
 
-        System.out.println(apfel2.getName());
-        System.out.println(apfel2.getGewicht());
-        System.out.println(apfel2.getFarbe());
+
+        System.out.println(apfel);
+        System.out.println(banane);
     }
 }
