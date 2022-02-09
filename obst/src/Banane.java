@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Banane extends Obst{
     private double kruemmung;
 
@@ -16,5 +18,6 @@ public class Banane extends Obst{
             text += "\n\tkrümmung = " + kruemmung;
              return text;
         }
+
     }
 

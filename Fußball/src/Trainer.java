@@ -24,8 +24,7 @@ public class Trainer extends Person {
     @Override
     public String toString() {
 
-        String text = "\n\tName\t\t= " +getName();
-        text += " \n\talter\t\t=" + getAlter();
+        String text = super.toString();
         text += "\n\terfahrung\t=  "  + erfahrung;
 
 

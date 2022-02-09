@@ -1,29 +1,21 @@
 public class Ergebnis {
 
-    private int toreHeim;
-    private int toreGast;
+    private int addToreHeim;
+    private int addToreGast;
 
-    public Ergebnis(int ergebnis, int toreGast , int toreHeim) {
-        this.toreGast = toreGast;
-        this.toreHeim = toreHeim;
+    public int getAddToreGast() {
+        return addToreGast;
     }
-    public int getToreHeim() {
-        return getToreHeim();
-    }
-    public void addToreHeim(int toreHeim) {
-        this.toreHeim = toreHeim;
-    }
-    public String getToreGast() {
-        return getToreGast();
-    }
-    public void addToreGast(int toreGast) {
-        this.toreGast = toreGast;
-    }
-    @Override
-    public String toString() {
 
-        String text = "\n\tToreHeim\t\t= " + toreHeim;
-        text += "\n\tToreGast\t\t=  " + toreGast;
-        return text;
+    public void setAddToreHeim() {
+        addToreHeim++;
+    }
+
+    public int getAddToreHeim() {
+        return addToreHeim;
+    }
+
+    public void setAddToreGast() {
+        addToreGast++;
     }
 }

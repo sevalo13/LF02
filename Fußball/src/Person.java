@@ -27,8 +27,8 @@ public abstract class Person {
     @Override
     public String toString() {
 
-        String text = "\n\tName\t\t= " + name;
-        text += "\n\talter\t\t=  " + alter;
+        String text = " \n\n\tName\t\t= " + name;
+        text += "\n\n\talter\t\t= " + alter;
         return text;
     }
 

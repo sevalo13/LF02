@@ -11,26 +11,25 @@ public class Spiel {
    this.spielbericht = spielbericht;
         this.gast = gast;
     }
-    public String getHeim() {
-        return getHeim();
+    public Mannschaft getHeim() {
+        return heim;
     }
-    public String getErgebnis() {
-        return getErgebnis();
+    public Ergebnis getErgebnis() {
+        return ergebnis;
     }
+
     public StringBuilder getSpielbericht() {
-        return getSpielbericht();
+        return spielbericht;
     }
-    public String getGast() {
-        return getGast();
+    public Mannschaft getGast() {
+        return gast;
     }
 
     @Override
     public String toString() {
 
         String text = "\n\tHeim\t= " + heim;
-        System.out.println();
         text += "\n\tGast\t=  " + gast;
-        System.out.println();
         text += "\n\tSpielbericht\t=  " + spielbericht;
         System.out.println();
         return text;

@@ -63,10 +63,10 @@ public class Mannschaft {
     @Override
     public String toString() {
 
-        String text = "\n\tName\t\t= " + name;
-        text += "\n\ttrainer\t\t=  " + trainer;
-            text += "\n\ttorwart\t\t= " + torwart;
-            text += "\n\tspielerliste\t\t=  " + spielerliste;
+        String text = "\n\tName\t\t " + name;
+        text += "\n\ttrainer\t\t  " + trainer;
+            text += "\n\ttorwart\t\t " + torwart;
+            text += "\n\tspielerliste\t\t " + spielerliste;
             return text;
 
 
