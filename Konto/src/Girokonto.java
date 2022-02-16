@@ -13,16 +13,19 @@ public class Girokonto extends Konto {
         this.zinsKresit=zinsKresit;
     }
     public boolean ueberweisen(double betrag,Girokonto girokonto) {
-        if (getKontoStand() + getKreditLimit() >= betrag){
-
+        if (auszahlen(betrag)) {
+            auszahlen(betrag);
+            girokonto.einzahlen(betrag);
            return true;
-
-        } else return false;
+        }
+        else {
+            return false;
+        }
 
     }
     @Override
     public String toString(){
-        return super.toString() + "\nzinsKresit:\t"+ zinsKresit;
+        return super.toString() + "\nzinsKresit:\t :"+ zinsKresit;
     }
 
 

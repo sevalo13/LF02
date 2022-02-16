@@ -1,4 +1,4 @@
-public class Adresse extends Person {
+public class Adresse  {
 
     private String strasse;
     private String hausNr;
@@ -6,8 +6,8 @@ public class Adresse extends Person {
     private String ort;
 
 
-    public Adresse(String vorname, String nachname ,String strasse,String hausNr,String plz,String ort) {
-        super(vorname, nachname);
+    public Adresse(String strasse,String hausNr,String  plz,String ort) {
+
         this.hausNr=hausNr;
         this.ort=ort;
         this.plz=plz;
@@ -40,10 +40,10 @@ public class Adresse extends Person {
     }
     @Override
     public String toString(){
-        String text = "HausNr" + hausNr;
-        text += "Ort" + ort;
-        text += "Plz" + plz;
-        text += "Straße" +strasse;
+        String text = "\nHausNr\t :" + hausNr;
+        text += "\nOrt\t :" + ort;
+        text += "\nPlz\t :" + plz;
+        text += "\nStraße\t :" +strasse;
         return text;
     }
 }

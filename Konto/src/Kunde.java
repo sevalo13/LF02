@@ -13,4 +13,8 @@ public class Kunde extends Person{
     public void setBetreuer(Mitarbeiter betreuer){
         this.betreuer=betreuer;
     }
+    @Override
+    public String toString(){
+        return super.toString() + "\nBetreuer:\t :"+ betreuer;
+    }
 }

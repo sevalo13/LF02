@@ -32,9 +32,9 @@ public abstract class Person {
     }
     @Override
     public String toString(){
-        String text = "vorname" +vorname;
-        text += "nachname" + nachname;
-        text += "Adresse" +adresse;
+        String text = "\nvorname\t :" +vorname;
+        text += "\nnachname\t :" + nachname;
+        text += "\nAdresse\t :" +adresse;
         return text;
     }
 }

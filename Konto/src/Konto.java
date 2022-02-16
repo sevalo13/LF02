@@ -25,23 +25,25 @@ public  abstract class Konto {
     public double getZinsGuthaben(){
         return zinsGuthaben;
     }
-    public void einzahlen(double betrag){
- kontoStand += betrag;
+    public boolean einzahlen(double betrag){
+        kontoStand += betrag;
+        return false;
     }
     public boolean auszahlen(double betrag){
         if (kontoStand + kreditLimit >= betrag){
             kontoStand -= betrag;
             return true;
-        } else return false;
+        } else
+            return false;
 
     }
 
     @Override
     public String toString(){
-        String text = "Inhaber"+ inhaber;
-        text += "KontoStand" + kontoStand;
-        text += "Kreditlimit"+ kreditLimit;
-        text += "ZinsGuthaben" + zinsGuthaben;
+        String text = "\nInhaber\t :"+ inhaber;
+        text += "\nKontoStand\t :" + kontoStand;
+        text += "\nKreditlimit\t :"+ kreditLimit;
+        text += "\nZinsGuthaben\t :" + zinsGuthaben;
         return text;
     }
 
