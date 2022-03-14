@@ -2,22 +2,33 @@ import java.util.ArrayList;
 
 public class Tresor {
     private ArrayList<Gegenstaend> gegenstaende ;
-double gesamtwert = 0;
+    double gesamtwert = 0;
 
     public Tresor(){
         gegenstaende = new ArrayList<>();
     }
 
-    public ArrayList getGegenstand() {
-        return gegenstaende;
+    public Gegenstaend getGegenstand(int id) {
+        // ArrayList nach dem Gegenstand mit dieser ID durchsuchen!
+        // Wenn vorhanden Gegenstand zurückgeben
+        // Wenn nicht vorhanden --> Exception
+        return  gegenstaende.get(id);
     }
 
     public void addGegenstand(Gegenstaend gegenstand) {
-        gegenstand= gegenstand;
+        gegenstaende.add(gegenstand);
     }
-    public void removeGegenstand( ArrayList gegenstaend ){
-        this.gegenstaende=gegenstaend;
+    public void removeGegenstand( Gegenstaend  gegenstaend ){
+        if (gegenstaende.contains(gegenstaend)) {
+            // Gegenstand aus ArrayList loeschen
+        } else {
+            // Exception werfen
+        }
+
     }
+
+    //
+
     public double berechneGesamtwert(){
         for ( Gegenstaend v: gegenstaende){
             v.getWert();
